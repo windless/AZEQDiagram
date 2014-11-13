@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'AZEQDiagram', :exclusive => true do
+  pod "AZEQDiagram", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "AZEQDiagram", :path => "../"
+
+  
+end
