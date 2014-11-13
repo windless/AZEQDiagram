@@ -1,0 +1,14 @@
+PODS:
+  - AZEQDiagram (0.1.0)
+
+DEPENDENCIES:
+  - AZEQDiagram (from `../`)
+
+EXTERNAL SOURCES:
+  AZEQDiagram:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AZEQDiagram: 18bd7f67bf5ebdd6d9d3d0515887e5a4c98d5a55
+
+COCOAPODS: 0.34.4
