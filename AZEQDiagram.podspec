@@ -10,19 +10,16 @@
 Pod::Spec.new do |s|
   s.name             = "AZEQDiagram"
   s.version          = "0.1.0"
-  s.summary          = "A short description of AZEQDiagram."
+  s.summary          = "假 EQ 图"
   s.description      = <<-DESC
-                       An optional longer description of AZEQDiagram
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+  使用 Facebook 的 POP 库实现的假 EQ 图
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/AZEQDiagram"
+  s.homepage         = "https://github.com/windless/AZEQDiagram"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Abner Zhong" => "windlessg@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/AZEQDiagram.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/windless/AZEQDiagram.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/windlessaz'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -34,5 +31,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'pop', '~> 1.0.7'
 end
