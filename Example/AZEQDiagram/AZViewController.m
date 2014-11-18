@@ -22,9 +22,9 @@
   self.view.backgroundColor = [UIColor whiteColor];
 
   self.diagram =
-      [[AZEQDiagram alloc] initWithFrame:CGRectMake(100, 50, 120, 50)];
-  self.diagram.color = [UIColor redColor];
-  [self.diagram setColumn:10 andColumnWidth:10];
+      [[AZEQDiagram alloc] initWithFrame:CGRectMake(100, 50, 40, 50)];
+  self.diagram.color = [UIColor blueColor];
+  [self.diagram setColumn:3 andColumnWidth:10];
   [self.view addSubview:self.diagram];
 
   UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -34,10 +34,22 @@
   [button addTarget:self
                 action:@selector(jump)
       forControlEvents:UIControlEventTouchUpInside];
+
+  UIButton *stop = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+  stop.frame = CGRectMake(140, 220, 40, 40);
+  [stop setTitle:@"Stop" forState:UIControlStateNormal];
+  [self.view addSubview:stop];
+  [stop addTarget:self
+                action:@selector(stop)
+      forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)jump {
   [self.diagram startAnimation];
+}
+
+- (void)stop {
+  [self.diagram stopAnimation];
 }
 
 @end

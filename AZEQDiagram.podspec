@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "AZEQDiagram"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "假 EQ 图"
   s.description      = <<-DESC
   使用 Facebook 的 POP 库实现的假 EQ 图

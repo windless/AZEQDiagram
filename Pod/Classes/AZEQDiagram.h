@@ -14,5 +14,6 @@
 
 - (void)setColumn:(NSInteger)column andColumnWidth:(CGFloat)columnWidth;
 - (void)startAnimation;
+- (void)stopAnimation;
 
 @end

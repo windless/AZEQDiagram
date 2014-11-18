@@ -47,11 +47,19 @@
   [self pop_removeAllAnimations];
   [self updateOffsets];
   [self beat];
+  if (self.timer) {
+    [self.timer invalidate];
+  }
   self.timer = [NSTimer scheduledTimerWithTimeInterval:0.6
                                                 target:self
                                               selector:@selector(beat)
                                               userInfo:nil
                                                repeats:YES];
+}
+
+- (void)stopAnimation {
+  [self.timer invalidate];
+  self.timer = nil;
 }
 
 - (void)beat {
